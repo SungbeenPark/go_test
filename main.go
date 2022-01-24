@@ -1,21 +1,49 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+//func multiply(a int, b int) int {
+//	return a * b
+//}
+//
+//func lenAndUpper(name string) (length int, uppercase string) {
+//	defer fmt.Println("I'm done")
+//	defer repeatMe("a", "b", "dd", "d", "e", "f")
+//	length = len(name)
+//	uppercase = strings.ToUpper(name)
+//	return
+//	//return len(name), strings.ToUpper(name)
+//}
+//
+//func repeatMe(words ...string) {
+//	fmt.Println(words)
+//}
+//
+////for문
+//func superAdd(numbers ...int) int {
+//	total := 0
+//	for _, number := range numbers {
+//		total += number
+//	}
+//	return total
+//}
 
-func multiply(a int, b int) int {
-	return a * b
-}
-
-func lenAndUpper(name string) (int, string) {
-
-	return len(name), strings.ToUpper(name)
-}
-
-func repeatMe(words ...string) {
-	fmt.Println(words)
+//if/else문
+//func canIDrink(age int) bool {
+//
+//	if koreanAge := age + 2; koreanAge < 18 {
+//		fmt.Println(koreanAge)
+//		return false
+//	}
+//	return true
+//}
+// switch문
+func canIDrink(age int) bool {
+	switch koreanAge := age + 2; koreanAge {
+	case 10:
+		return false
+	case 18:
+		return true
+	}
+	return false
 }
 
 func main() {
@@ -24,5 +52,20 @@ func main() {
 	//fmt.Println(totalLength)
 	//fmt.Println(upperName)
 
-	repeatMe("a", "b", "dd", "d", "e", "f")
+	//repeatMe("a", "b", "dd", "d", "e", "f")
+
+	//result := superAdd(1, 2, 3, 4, 5, 6)
+	//fmt.Println(result)
+	//fmt.Println(canIDrink(16))
+
+	//포인터
+	//a := 2
+	//b := &a
+	//*b = 10
+	//fmt.Println(a, *b)
+
+	//names := []string{"a", "b", "c"}
+	//names = append(names, "d")
+	//fmt.Println(names)
+
 }

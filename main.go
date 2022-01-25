@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"github.com/SungbeenPark/go_test/account"
+)
+
 //func multiply(a int, b int) int {
 //	return a * b
 //}
@@ -46,6 +51,12 @@ func canIDrink(age int) bool {
 	return false
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
 	//fmt.Println(multiply(2, 3))
 	//totalLength, upperName := lenAndUpper("sungbeen")
@@ -67,5 +78,22 @@ func main() {
 	//names := []string{"a", "b", "c"}
 	//names = append(names, "d")
 	//fmt.Println(names)
+
+	//been := map[string]string{"name": "been", "age": "12"}
+
+	//for key, value := range been {
+	//	fmt.Println(key, value)
+	//}
+
+	//sbpark := person{name: "sb", age: 37, favFood: []string{"ham", "pork"}}
+	//fmt.Println(sbpark)
+
+	account := Account.NewAccount("been")
+	fmt.Println(account)
+	account2 := Account.NewAccount("bbbb")
+	fmt.Println(account2)
+	account3 := Account.NewAccount("222")
+	fmt.Println(account3)
+	fmt.Println(account)
 
 }
